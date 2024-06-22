@@ -1,4 +1,4 @@
-# Dotnet8_GlobalExceptionHandlers
+# Dotnet8 Global ExceptionHandlers
 
 Global Exception Handlers in .Net 8
 
