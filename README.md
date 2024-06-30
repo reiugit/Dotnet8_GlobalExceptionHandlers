@@ -6,8 +6,7 @@ Global ExceptionHandlers in .Net 8
 * ExceptionHandlers are added to the DI Container
 * The order of the exception handlers is important
 
-<b>The first exception handler is OnlyLoggingExceptionHandler</b><br>
-It only logs the error, but does not handle it<br>
+<b>The first exception handler is only logs the error, but does not handle it<b><br>
 It return false to indicate that the exception was not handled<br>
 and the next exception handler in the pipeline should be invoked<br>
   
