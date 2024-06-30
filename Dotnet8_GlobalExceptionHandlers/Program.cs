@@ -2,9 +2,10 @@ using Dotnet8_GlobalExceptionHandlers.ExceptionHandlers;
 
 var builder = WebApplication.CreateBuilder(args);
 {
-    builder.Services.AddExceptionHandler<OnlyLoggingExceptionHandler>(); // only logs exceptions
-    builder.Services.AddExceptionHandler<ArgumentExceptionHandler>();    // handles all ArgumentExceptions
-    builder.Services.AddExceptionHandler<DefaultExceptionHandler>();     // handles all remaining exceptions
+    //ExceptionHandler pipeline:
+    builder.Services.AddExceptionHandler<OnlyLoggingExceptionHandler>(); // Only logs exceptions
+    builder.Services.AddExceptionHandler<ArgumentExceptionHandler>();    // Handles all ArgumentExceptions
+    builder.Services.AddExceptionHandler<DefaultExceptionHandler>();     // Handles all remaining exceptions
     builder.Services.AddProblemDetails();
 }
 
