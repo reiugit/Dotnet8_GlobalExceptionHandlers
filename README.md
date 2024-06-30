@@ -11,6 +11,5 @@ It return false to indicate that the exception was not handled<br>
 and the next exception handler in the pipeline should be invoked<br>
   
 <b>The second and third exception handler handle different types of exceptions</b><br>
-In this example at first argument exceptions, then all other exceptions are handled.<br>
-These exception handlers return true to indicate that the exception was successfully handled<br>
-and no more exception handlers in the pipeline should be handled.
+These exception handlers return true to indicate that the exception was successfully<br>
+handled and no more exception handlers in the pipeline should be handled.
