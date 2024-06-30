@@ -7,9 +7,10 @@ Global ExceptionHandlers in .Net 8
 * The order of the exception handlers is important
 
 <b>The first exception handler is OnlyLoggingExceptionHandler</b><br>
-it only logs the error, but does not handle it<br>
-it return false to indicate that the exception was not handled<br>
+It only logs the error, but does not handle it<br>
+It return false to indicate that the exception was not handled<br>
 and the next exception handler in the pipeline should be invoked<br>
   
 <b>The second and third exception handler handle different types of exceptions</b><br>
-In this example at first argument exceptions, then all other exceptions are handled.
+In this example at first argument exceptions, then all other exceptions are handled.<br>
+These exception handlers return true to indicate that the exception was successfully handled.
